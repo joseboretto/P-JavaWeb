@@ -1,0 +1,32 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css"> 
+
+<div id="header">
+<ul class="nav">
+        <!-- En tomcat: pageContext.request.contextPath /css/style.css , no hace falta la barra  -->
+        <!-- En GlassFish: /pageContext.request.contextPath /css/style.css , si hace falta la barra  -->
+
+        <li><a href="${pageContext.request.contextPath}/index.jsp">Inicio</a></li>
+        <li><a href="">Nuevo Pedido</a></li>
+        <li><a href="">Soporte</a>
+                <ul>
+                        <li><a href="">Cliente</a>
+                            <ul>
+                                        <li><a href="${pageContext.request.contextPath}/soporte/cliente/crearCliente.jsp">Crear</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/listarCliente">Listar</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/soporte/cliente/actualizarCliente.jsp">Actualizar</a></li>
+                                        <li><a href="${pageContext.request.contextPath}/soporte/cliente/eliminarCliente.jsp">Eliminar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Articulo</a></li>
+
+                </ul>
+        </li>
+				
+			</ul>
+</div>
+<br>
+<br>
+<br>
